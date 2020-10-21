@@ -1,0 +1,58 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1601282935,
+        "narHash": "sha256-WQAFV6sGGQxrRs3a+/Yj9xUYvhTpukQJIcMbIi7LCJ4=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "588973065fce51f4763287f0fda87a174d78bf48",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1603066386,
+        "narHash": "sha256-BpO5yrRi2oqYaOHwWZBoRlLydOeYm0YhuLG4ISsaSzE=",
+        "path": "/nix/store/6mz8x91y5pbndzfcbiwf3ag8k30k6m00-source",
+        "rev": "5265d49a36bb5a18c85e6817b338b456acc3b8cc",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "tektoncli": "tektoncli"
+      }
+    },
+    "tektoncli": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601488700,
+        "narHash": "sha256-BtB+sKn5mPUUYJ7kADHeCRUWpNZsDomZ44LCI2/5bAY=",
+        "owner": "tektoncd",
+        "repo": "cli",
+        "rev": "ef857a5bb91837a668aa9a024661294db1830810",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tektoncd",
+        "ref": "v0.13.0",
+        "repo": "cli",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
