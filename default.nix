@@ -1,12 +1,21 @@
 { stdenv, buildGoModule, self }:
 
+let
+  versionPath = "${self.inputs.tektoncli}/VERSION";
+  version =
+    if builtins.pathExists versionPath then
+      builtins.replaceStrings
+        [ "\n" "\r" "\t" ] [ "" "" "" ]
+        (builtins.readFile versionPath)
+    else self.inputs.tektoncli.rev;
+in
 buildGoModule {
   pname = "tektoncli";
-  version = self.inputs.tektoncli.rev;
+  inherit version;
   src = self.inputs.tektoncli;
-  #vendorSha256 = "sha256-iWA1b5RAYDxoDCg8ClhWUIpG7Zr6WSbkblq4DDvCf+J=";
   vendorSha256 = null;
   CGO_ENABLED = 0;
+  buildFlagsArray = [ "-ldflags=-X github.com/tektoncd/cli/pkg/cmd/version.clientVersion=${version}" ];
   doCheck = false;
   subPackages = [ "cmd/tkn" ];
   meta = {

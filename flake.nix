@@ -3,7 +3,7 @@
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.tektoncli = {
-    url = "github:tektoncd/cli/v0.13.0";
+    url = "github:tektoncd/cli/v0.13.1";
     flake = false;
   };
 

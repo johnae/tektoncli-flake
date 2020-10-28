@@ -17,10 +17,10 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1603066386,
-        "narHash": "sha256-BpO5yrRi2oqYaOHwWZBoRlLydOeYm0YhuLG4ISsaSzE=",
-        "path": "/nix/store/6mz8x91y5pbndzfcbiwf3ag8k30k6m00-source",
-        "rev": "5265d49a36bb5a18c85e6817b338b456acc3b8cc",
+        "lastModified": 1603758576,
+        "narHash": "sha256-xKFmWVx+rFInBao3gtmvXcd0LjHD1+0c1Ef5PJDrbuM=",
+        "path": "/nix/store/q5xckc93ra0fahpj6z01ffrxj3pa0qa8-source",
+        "rev": "1dc37370c489b610f8b91d7fdd40633163ffbafd",
         "type": "path"
       },
       "original": {
@@ -38,16 +38,16 @@
     "tektoncli": {
       "flake": false,
       "locked": {
-        "lastModified": 1601488700,
-        "narHash": "sha256-BtB+sKn5mPUUYJ7kADHeCRUWpNZsDomZ44LCI2/5bAY=",
+        "lastModified": 1603267745,
+        "narHash": "sha256-o+yeXG5fONoMWv1G4cUnYzanOu7g2CsEuI1zYiCCUTI=",
         "owner": "tektoncd",
         "repo": "cli",
-        "rev": "ef857a5bb91837a668aa9a024661294db1830810",
+        "rev": "b2ac898e07b8de0cf5d043899773cc3e0877bd65",
         "type": "github"
       },
       "original": {
         "owner": "tektoncd",
-        "ref": "v0.13.0",
+        "ref": "v0.13.1",
         "repo": "cli",
         "type": "github"
       }
